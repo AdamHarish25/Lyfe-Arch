@@ -28,12 +28,12 @@ function App() {
               Live Love Lyfe
             </h1>
           </div>
-          <div className="absolute top-1/3 left-2/4 mt-14 md:mt-20 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5 tracking-normal md:tracking-wide">
+          <div className="absolute top-1/3 left-2/4 my-14 md:my-20 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5 tracking-normal md:tracking-wide">
             <h1 className="text-center font-medium sm:font-normal font-Poppins text-sm sm:text-base md:text-xl">
               A minimalist home that feels warm and cozy
             </h1>
           </div>
-          <div className="absolute top-2/4 left-2/4 -translate-y-2/4 mt-9 -translate-x-2/4 w-full h-fit px-5 flex justify-center">
+          <div className="absolute top-2/4 left-2/4 -translate-y-2/4 my-9 -translate-x-2/4 w-full h-fit px-5 flex justify-center">
             <button className="py-2 px-16 md:px-20 md:py-3 md:hover:px-24 md:hover:py-4 transform duration-200 bg-blue-500 font-Poppins text-base rounded-3xl text-white">
               Explore Now
             </button>
@@ -90,7 +90,7 @@ function App() {
             </div>
           </div>
           <div className="flex justify-center items-center h-auto w-screen py-10">
-            <div className="w-96 lg:w-128 h-auto bg-slate-400/[.20] rounded-xl p-3">
+            <div className="w-96 shadow-xl lg:w-128 h-auto bg-slate-400/[.30] rounded-xl p-3">
               <Player src={AdVideo} className="rounded-xl" startTime={0}>
                 <track
                   kind="captions"
