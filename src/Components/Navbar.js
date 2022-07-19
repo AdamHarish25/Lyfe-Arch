@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import OutsideClick from "./OutsideClick";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TwitterLogo from "../Attachments/Images/Twitter.png";
 import FBLogo from "../Attachments/Images/Facebook.png";
@@ -81,7 +80,7 @@ export default function Navbar() {
             </button>
           )}
           <aside
-            className={`inset-y-0 -right-1 fixed bg-white shadow-xl shadow-gray-400 lg:translate-x-full p-10 w-72 ${
+            className={`overflow-y-scroll inset-y-0 -right-1 fixed bg-white shadow-xl shadow-gray-400 lg:translate-x-full p-10 w-72 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }  duration-300 ease-in-out`}
           >
@@ -142,7 +141,7 @@ export default function Navbar() {
                     src={TwitterLogo}
                     className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
                   ></img>
-                  <span className="ml-3 text-sm text-gray-400 font-Poppins">
+                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
                     Follow us on Twitter
                   </span>
                 </a>
@@ -153,7 +152,7 @@ export default function Navbar() {
                     src={FBLogo}
                     className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
                   ></img>
-                  <span className="ml-3 text-sm text-gray-400 font-Poppins">
+                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
                     Follow us on Facebook
                   </span>
                 </a>
@@ -164,7 +163,7 @@ export default function Navbar() {
                     src={LinkedInLogo}
                     className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
                   ></img>
-                  <span className="ml-3 text-sm text-gray-400 font-Poppins">
+                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
                     LinkedIn
                   </span>
                 </a>
