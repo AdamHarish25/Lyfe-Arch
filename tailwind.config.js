@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     fontFamily: {
@@ -15,6 +15,7 @@ module.exports = {
         100: "30rem",
         128: "45rem",
         256: "50rem",
+        screenLg: "120vh",
       },
     },
     screens: {
@@ -36,7 +37,5 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [
-    require('flowbite/plugin'),
-  ]
-}
+  plugins: [require("flowbite/plugin")],
+};

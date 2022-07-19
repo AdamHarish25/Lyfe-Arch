@@ -22,7 +22,7 @@ function App() {
   return (
     <div id="App" className="h-auto w-screen overflow-x-hidden">
       <section id="HomeSect">
-        <div className="Bg-img bg-center w-screen h-screen bg-cover relative text-3xl sm:text-4xl md:text-6xl">
+        <div className="Bg-img bg-center w-screen h-screenLg bg-cover relative text-3xl sm:text-4xl md:text-6xl">
           <div className="absolute xs:top-1/3 left-2/4 -translate-y-2/4 -translate-x-2/4 w-full h-fit px-5">
             <h1 className="text-center font-extrabold font-Poppins">
               Live Love Lyfe
@@ -112,9 +112,7 @@ function App() {
       </section>
 
       <section id="thrdPage">
-        <div className="">
-
-        </div>
+        <div className=""></div>
       </section>
 
       <Navbar />
