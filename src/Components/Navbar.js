@@ -69,7 +69,7 @@ export default function Navbar() {
               className="block lg:hidden p-3 rounded-md transform duration-200 text-white bg-gray-500/[.10]"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <FontAwesomeIcon icon={faBars} />
+              <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
             </button>
           ) : (
             <button
