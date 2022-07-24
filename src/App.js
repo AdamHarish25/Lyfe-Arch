@@ -23,6 +23,16 @@ import { Animated } from "react-animated-css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import {
+  AmazonSquareFilled,
+  DropboxSquareFilled,
+  FacebookFilled,
+  GithubFilled,
+  GoogleOutlined,
+  GooglePlusSquareFilled,
+  TwitterCircleFilled,
+  WindowsFilled,
+} from "@ant-design/icons";
 
 function App() {
   useEffect(() => {
@@ -32,7 +42,8 @@ function App() {
 
   return (
     <div id="App" className="h-auto w-screen overflow-x-hidden">
-      <ul className="list-none space-y-5 w-screen h-auto">
+
+      <ul id="Regulation 1" className="list-none space-y-5 w-screen h-auto">
         <li>
           <section id="HomeSect">
             <div className="Bg-img bg-center w-screen h-screen bg-cover relative">
@@ -84,6 +95,7 @@ function App() {
             </div>
           </section>
         </li>
+
         <li>
           <section id="FeatureSect">
             <div className="w-screen h-auto py-5 justify-center">
@@ -140,7 +152,7 @@ function App() {
                 </div>
               </div>
               <div className="flex justify-center items-center h-auto w-screen py-10">
-                <div className="w-72 sm:w-96 shadow-xl md:w-100 lg:w-128 h-auto bg-slate-400/[.30] rounded-xl p-3">
+                <div className="w-80 sm:w-96 shadow-xl md:w-100 lg:w-128 h-auto bg-slate-400/[.30] rounded-xl p-3">
                   <Player src={AdVideo} startTime={0}>
                     <track
                       kind="captions"
@@ -163,7 +175,7 @@ function App() {
         </li>
       </ul>
 
-      <ul className="w-screen list-none space-y-36 my-20">
+      <ul id="Regulation 2" className="w-screen list-none space-y-36 my-20">
         <li>
           <section id="IntroSect">
             <div className="h-auto w-screen grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -201,6 +213,7 @@ function App() {
             </div>
           </section>
         </li>
+
         <li>
           <section id="SubscribeSect">
             <div className="h-auto w-screen grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -234,8 +247,8 @@ function App() {
                         </h1>
                       </li>
                       <li>
-                        <h1 className="font-Poppins font-normal text-sm sm:text-base text-gray-600">
-                          Available exclusively on Figmaland
+                        <h1 className="font-Poppins font-normal text-base text-gray-600">
+                          Available exclusively on Lyfe Arch
                         </h1>
                       </li>
                     </ul>
@@ -258,6 +271,124 @@ function App() {
               </div>
             </div>
           </section>
+        </li>
+      </ul>
+
+      <ul id="Regulation 3" className="list-none space-y-20 py-10">
+        <li>
+          <div id="ClientsSect" className="w-screen h-auto">
+            <div className="w-screen h-auto">
+              <ul className="space-y-3 list-none">
+                <li>
+                  <h1 className="font-Poppins font-normal text-3xl text-center">
+                    Partners
+                  </h1>
+                </li>
+                <li>
+                  <p className="font-Poppins font-normal text-sm sm:text-base md:text-lg text-center">
+                    Most calendars are designed for teams, <br /> Slate is
+                    designed for freelancers.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-screen h-100 overflow-y-scroll md:h-auto place-items-center gap-4 my-10 px-10">
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <GoogleOutlined className="text-4xl" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <FacebookFilled className="text-4xl text-blue-600" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <AmazonSquareFilled className="text-4xl" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <TwitterCircleFilled className="text-4xl text-blue-500" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <GithubFilled className="text-4xl" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <DropboxSquareFilled className="text-4xl text-blue-500" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <WindowsFilled className="text-4xl text-blue-500" />
+                  </div>
+                </div>
+              </div>
+              <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
+                <div>
+                  <h1 className="font-Poppins font-normal text-center text-base">
+                    Client Name
+                  </h1>
+                  <div className="flex justify-center items-center w-full h-auto my-3">
+                    <GooglePlusSquareFilled className="text-4xl text-red-600" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-screen h-auto flex justify-center items-center my-5">
+              <button className="w-60 h-12 hover:h-14 hover:w-64 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-lg rounded-full">
+                Try For Free
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="TestimonialSect" className="w-screen h-auto">
+            <div className="w-screen">
+              <h1 className="font-Poppins font-normal text-3xl text-center">
+                Testimonials
+              </h1>
+            </div>
+          </div>
         </li>
       </ul>
       <Navbar />
