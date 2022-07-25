@@ -12,7 +12,9 @@ module.exports = {
     },
     extend: {
       spacing: {
+        68: "17rem",
         100: "30rem",
+        110: "35rem",
         128: "45rem",
         256: "50rem",
         screenLg: "120vh",

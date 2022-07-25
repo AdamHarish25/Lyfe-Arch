@@ -25,16 +25,7 @@ import { Animated } from "react-animated-css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import {
-  AmazonSquareFilled,
-  DropboxSquareFilled,
-  FacebookFilled,
-  GithubFilled,
-  GoogleOutlined,
-  GooglePlusSquareFilled,
-  TwitterCircleFilled,
-  WindowsFilled,
-} from "@ant-design/icons";
+import ClientSectContent from "./Components/ClientSectContent";
 
 function App() {
   useEffect(() => {
@@ -43,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div id="App" className="h-auto w-screen overflow-x-hidden">
+    <div id="App" className="h-auto w-screen">
       <section id="HomeSect">
         <div className="Bg-img bg-center w-screen h-screen bg-cover relative mb-20">
           <ul className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 list-none space-y-6 w-screen h-auto">
@@ -211,7 +202,7 @@ function App() {
             <img
               data-aos="fade-right"
               src={NewspaperGraph}
-              className="h-64 sm:h-72 lg:h-96"
+              className="h-64 sm:h-68 lg:h-96"
             />
           </div>
           <div className="h-auto w-full flex justify-center lg:justify-start py-5">
@@ -279,88 +270,9 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-screen h-100 overflow-y-scroll md:h-auto place-items-center gap-4 my-10 px-10">
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <GoogleOutlined className="text-4xl" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <FacebookFilled className="text-4xl text-blue-600" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <AmazonSquareFilled className="text-4xl" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <TwitterCircleFilled className="text-4xl text-blue-500" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <GithubFilled className="text-4xl" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <DropboxSquareFilled className="text-4xl text-blue-500" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <WindowsFilled className="text-4xl text-blue-500" />
-                </div>
-              </div>
-            </div>
-            <div className="h-36 w-60 lg:w-full flex justify-center items-center border ">
-              <div>
-                <h1 className="font-Poppins font-normal text-center text-base">
-                  Client Name
-                </h1>
-                <div className="flex justify-center items-center w-full h-auto my-3">
-                  <GooglePlusSquareFilled className="text-4xl text-red-600" />
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <ClientSectContent />
+
           <div className="w-screen h-auto flex justify-center items-center my-5">
             <button className="w-60 h-12 hover:h-14 hover:w-64 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-lg rounded-full">
               Try For Free
@@ -426,7 +338,182 @@ function App() {
       </section>
 
       <section id="PricingSect">
-        <div></div>
+        <div className="w-screen h-auto bg-slate-700 py-20">
+          <div id="PriceTitle" className="w-screen h-auto text-white">
+            <h1 className="font-Poppins text-3xl text-center">Pricing</h1>
+            <p className="font-Poppins font-light text-center text-sm sm:text-base lg:text-lg my-3">
+              Most calendars are designed for teams. <br /> Slate is designed
+              for freelancers
+            </p>
+          </div>
+          <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-3 place-items-center gap-10 lg:gap-0 my-10 py-5 px-10">
+            <div className="h-100 w-64 bg-white rounded-lg py-8">
+              <div className="w-full h-auto my-5">
+                <h1 className="font-Poppins font-bold text-lg text-center">
+                  FREE
+                </h1>
+                <p className="font-Poppins font-light text-center text-light text-sm">
+                  Organize across all <br /> apps by hand
+                </p>
+              </div>
+              <div className="w-full h-auto grid grid-cols-2 gap-2 my-5">
+                <div>
+                  <h1 className="text-6xl font-Poppins font-bold text-end">
+                    0
+                  </h1>
+                </div>
+                <div className="text-start">
+                  <h1 className="font-Poppins font-bold">$</h1>
+                  <p className="font-Poppins font-light text-sm">Per Month</p>
+                </div>
+              </div>
+              <div className="h-auto w-full my-5">
+                <ul className="list-none space-y-4">
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full h-auto flex justify-center items-center my-10">
+                <button className="w-52 h-10 hover:h-12 hover:w-56 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-base rounded-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div className="w-64 h-110 lg:w-72 bg-blue-500 text-white rounded-lg py-8 z-10">
+              <div className="w-full h-auto my-5">
+                <h1 className="font-Poppins font-bold text-lg text-center">
+                  STANDARD
+                </h1>
+                <p className="font-Poppins font-light text-center text-light text-sm">
+                  Organize across all <br /> apps by hand
+                </p>
+              </div>
+              <div className="w-full h-auto grid grid-cols-2 gap-2 my-5">
+                <div>
+                  <h1 className="text-5xl font-Poppins font-bold text-end">
+                    10
+                  </h1>
+                </div>
+                <div className="text-start">
+                  <h1 className="font-Poppins font-bold">$</h1>
+                  <p className="font-Poppins font-light text-sm">Per Month</p>
+                </div>
+              </div>
+              <div className="h-auto w-full">
+                <ul className="list-none space-y-4">
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full h-auto flex justify-center items-center my-10">
+                <button className="w-52 h-10 hover:h-12 hover:w-56 transform duration-200 text-blue-500 bg-white font-Poppins font-medium text-base rounded-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div className="h-100 w-64 bg-white rounded-lg py-6">
+              <div className="w-full h-auto my-5">
+                <h1 className="font-Poppins font-bold text-lg text-center">
+                  BUSINESS
+                </h1>
+                <p className="font-Poppins font-light text-center text-light text-sm">
+                  Organize across all <br /> apps by hand
+                </p>
+              </div>
+              <div className="w-full h-auto grid grid-cols-2 gap-2 my-5">
+                <div>
+                  <h1 className="text-5xl font-Poppins font-bold text-end">
+                    99
+                  </h1>
+                </div>
+                <div className="text-start">
+                  <h1 className="font-Poppins font-bold">$</h1>
+                  <p className="font-Poppins font-light text-sm">Per Month</p>
+                </div>
+              </div>
+              <div className="h-auto w-full">
+                <ul className="list-none space-y-4">
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                  <li>
+                    <p className="font-Poppins text-sm text-center">
+                      Pricing Feature
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full h-auto flex justify-center items-center my-10">
+                <button className="w-52 h-10 hover:h-12 hover:w-56 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-base rounded-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <Navbar />
     </div>
