@@ -12,6 +12,7 @@ import FeaturesSect from "./Components/FeaturesSect";
 import HomeSect from "./Components/HomeSect";
 import TestimonialSect from "./Components/TestimonialsSect";
 import PricingSect from "./Components/PricingSect";
+import ContactSect from "./Components/ContactSect";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,10 @@ function App() {
   }, []);
 
   return (
-    <div id="App" className="h-auto w-screen">
+    <div
+      id="App"
+      className="h-auto w-screen overflow-x-hidden lg:overflow-x-auto"
+    >
       <HomeSect />
 
       <FeaturesSect />
@@ -34,6 +38,8 @@ function App() {
       <TestimonialSect />
 
       <PricingSect />
+
+      <ContactSect />
 
       <Navbar />
     </div>

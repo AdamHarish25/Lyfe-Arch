@@ -69,23 +69,25 @@ export default function FeaturesSect() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center h-auto w-screen py-10">
-          <div className="w-80 sm:w-96 shadow-xl md:w-100 lg:w-128 h-auto bg-slate-400/[.30] rounded-xl p-3">
-            <Player src={AdVideo} startTime={0}>
-              <track
-                kind="captions"
-                src={AdCaptions}
-                srcLang="en"
-                label="English"
-                default
-              ></track>
-              <LoadingSpinner />
-              <BigPlayButton position="center" />
-              <ControlBar autoHide={true} autoHideTime={2000}>
-                <ClosedCaptionButton order={7} />
-                <PlayToggle />
-              </ControlBar>
-            </Player>
+        <div className="flex items-center h-auto w-screen py-10">
+          <div className="w-full h-full px-5 flex justify-center">
+            <div className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-400/[.30] rounded-xl p-3">
+              <Player src={AdVideo} startTime={0}>
+                <track
+                  kind="captions"
+                  src={AdCaptions}
+                  srcLang="en"
+                  label="English"
+                  default
+                ></track>
+                <LoadingSpinner />
+                <BigPlayButton position="center" />
+                <ControlBar autoHide={true} autoHideTime={2000}>
+                  <ClosedCaptionButton order={7} />
+                  <PlayToggle />
+                </ControlBar>
+              </Player>
+            </div>
           </div>
         </div>
       </div>

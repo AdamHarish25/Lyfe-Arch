@@ -80,8 +80,10 @@ export default function Navbar() {
             </button>
           )}
           <aside
-            className={`overflow-y-scroll inset-y-0 -right-1 fixed bg-white shadow-xl shadow-gray-400 lg:translate-x-full p-10 w-72 ${
-              isOpen ? "translate-x-0" : "translate-x-full"
+            className={`overflow-y-scroll inset-y-0 -right-1 fixed bg-white lg:translate-x-full p-10 w-72 ${
+              isOpen
+                ? "translate-x-0 shadow-xl shadow-gray-400"
+                : "translate-x-full"
             }  duration-300 ease-in-out`}
           >
             <ul className="list-none space-y-5">

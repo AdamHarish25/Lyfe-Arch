@@ -69,7 +69,7 @@ export default function PricingSect() {
             </div>
             <div className="w-full h-auto grid grid-cols-2 gap-2 my-5">
               <div>
-                <h1 className="text-5xl font-Poppins font-bold text-end">10</h1>
+                <h1 className="text-6xl font-Poppins font-bold text-end">10</h1>
               </div>
               <div className="text-start">
                 <h1 className="font-Poppins font-bold">$</h1>
