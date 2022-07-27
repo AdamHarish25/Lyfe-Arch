@@ -10,8 +10,7 @@ import {
   Player,
   PlayToggle,
 } from "video-react";
-import AdVideo from "../Attachments/Video/IKEAad.mp4";
-import AdCaptions from "../Attachments/VideoCaption/AdCaption.vtt";
+import AdVideo from "../Attachments/Video/Client'sVideo.mp4";
 import "video-react/dist/video-react.css";
 
 export default function FeaturesSect() {
@@ -72,18 +71,10 @@ export default function FeaturesSect() {
         <div className="flex items-center h-auto w-screen py-10">
           <div className="w-full h-full px-5 flex justify-center">
             <div className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-400/[.30] rounded-xl p-3">
-              <Player src={AdVideo} startTime={0}>
-                <track
-                  kind="captions"
-                  src={AdCaptions}
-                  srcLang="en"
-                  label="English"
-                  default
-                ></track>
+              <Player src={AdVideo} fluid={true} startTime={0}>
                 <LoadingSpinner />
                 <BigPlayButton position="center" />
                 <ControlBar autoHide={true} autoHideTime={2000}>
-                  <ClosedCaptionButton order={7} />
                   <PlayToggle />
                 </ControlBar>
               </Player>
