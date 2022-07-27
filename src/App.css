@@ -1477,6 +1477,10 @@ input:checked + .toggle-bg{
   height: 14rem;
 }
 
+.h-screenLg{
+  height: 120vh;
+}
+
 .w-screen{
   width: 100vw;
 }
@@ -4895,6 +4899,10 @@ input:checked + .toggle-bg{
 
   .lg\:h-96{
     height: 24rem;
+  }
+
+  .lg\:h-screenLg{
+    height: 120vh;
   }
 
   .lg\:w-full{
