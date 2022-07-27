@@ -9,6 +9,7 @@ import {
   LoadingSpinner,
   Player,
   PlayToggle,
+  VolumeMenuButton,
 } from "video-react";
 import AdVideo from "../Attachments/Video/Client'sVideo.mp4";
 import "video-react/dist/video-react.css";
@@ -75,7 +76,7 @@ export default function FeaturesSect() {
                 <LoadingSpinner />
                 <BigPlayButton position="center" />
                 <ControlBar autoHide={true} autoHideTime={2000}>
-                  
+                  <VolumeMenuButton vertical />
                   <PlayToggle />
                 </ControlBar>
               </Player>
