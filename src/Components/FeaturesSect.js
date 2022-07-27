@@ -4,7 +4,6 @@ import PencilWritepng from "../Attachments/Images/pencilWriting.png";
 import BrushPng from "../Attachments/Images/brush.png";
 import {
   BigPlayButton,
-  ClosedCaptionButton,
   ControlBar,
   LoadingSpinner,
   Player,
