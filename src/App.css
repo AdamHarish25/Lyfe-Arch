@@ -1473,6 +1473,10 @@ input:checked + .toggle-bg{
   height: 13rem;
 }
 
+.h-56{
+  height: 14rem;
+}
+
 .w-screen{
   width: 100vw;
 }

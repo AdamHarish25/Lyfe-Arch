@@ -70,11 +70,12 @@ export default function FeaturesSect() {
         </div>
         <div className="flex items-center h-auto w-screen py-10">
           <div className="w-full h-full px-5 flex justify-center">
-            <div className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-400/[.30] rounded-xl p-3">
-              <Player src={AdVideo} fluid={true} startTime={0}>
+            <div className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-400/[.30] rounded-xl p-3 grid place-items-center">
+              <Player src={AdVideo} height={400} fluid={false} startTime={0}>
                 <LoadingSpinner />
                 <BigPlayButton position="center" />
                 <ControlBar autoHide={true} autoHideTime={2000}>
+                  
                   <PlayToggle />
                 </ControlBar>
               </Player>
