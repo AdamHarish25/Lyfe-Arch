@@ -2,9 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TwitterLogo from "../Attachments/Images/Twitter.png";
-import FBLogo from "../Attachments/Images/Facebook.png";
-import LinkedInLogo from "../Attachments/Images/Linkedin.png";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
@@ -15,10 +12,10 @@ export default function Navbar() {
       <div>
         <header
           id="Navbar"
-          className="inset-x-0 py-8 px-6 lg:py-10 absolute top-0 flex lg:items-center justify-end lg:justify-around"
+          className="inset-x-0 py-8 px-6 lg:py-10 absolute top-0 flex lg:items-center justify-end lg:justify-center"
         >
           <div className="hidden lg:block w-auto mx-10 h-auto">
-            <ul className="space-x-8 inline font-Poppins text-gray-700 list-none">
+            <ul className="space-x-10 inline font-Poppins font-medium text-white list-none">
               <li className="inline">
                 <a href="#">Home</a>
               </li>
@@ -33,34 +30,6 @@ export default function Navbar() {
               </li>
               <li className="inline">
                 <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-auto h-auto hidden lg:block mx-10">
-            <ul className="space-x-6 inline fill-gray-600 list-none">
-              <li className="inline">
-                <a href="#">
-                  <img
-                    src={TwitterLogo}
-                    className="h-6 w-7 hover:h-7 hover:w-8 transform duration-200 inline"
-                  ></img>
-                </a>
-              </li>
-              <li className="inline">
-                <a href="#">
-                  <img
-                    src={FBLogo}
-                    className="h-6 w-7 hover:h-7 hover:w-8 transform duration-200 inline"
-                  ></img>
-                </a>
-              </li>
-              <li className="inline">
-                <a href="#">
-                  <img
-                    src={LinkedInLogo}
-                    className="h-6 w-7 hover:h-7 hover:w-8 transform duration-200 inline"
-                  ></img>
-                </a>
               </li>
             </ul>
           </div>
@@ -133,7 +102,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className="h-10 my-10">
+            {/* <div className="h-10 my-10">
               <hr className="border-b-4 rounded-xl text-gray-600"></hr>
             </div>
             <ul className="list-none space-y-5">
@@ -170,7 +139,7 @@ export default function Navbar() {
                   </span>
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </aside>
         </header>
       </div>

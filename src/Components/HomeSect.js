@@ -5,7 +5,7 @@ export default function HomeSect() {
   return (
     <section id="HomeSect">
       <div className="Bg-img bg-center w-screen h-screen bg-cover relative mb-10">
-        <ul className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 list-none space-y-6 w-screen h-auto">
+        <ul className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 list-none space-y-6 w-screen h-auto text-white">
           <li>
             <div className="w-full h-fit px-5">
               <Animated
