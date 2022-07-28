@@ -19,7 +19,7 @@ export default function TestimonialSect() {
           </li>
           <li>
             <div className="w-screen h-auto px-10">
-              <p className="text-center font-Poppins font-normal text-sm md:text-lg">
+              <p className="text-center font-Poppins font-normal text-xs md:text-lg">
                 Most calendars are designed for teams. Slate is designed for
                 freelancers <br className="hidden md:block" /> who want a simple
                 way to plan their schedule.

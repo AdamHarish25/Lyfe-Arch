@@ -1,11 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/iframe-has-title */
 import {
-  FacebookFilled,
-  LinkedinFilled,
-  TwitterOutlined,
-} from "@ant-design/icons";
-import {
   faEnvelope,
   faLocationDot,
   faMobilePhone,
@@ -18,12 +13,12 @@ export default function ContactSect() {
       <div className="w-screen h-auto my-20">
         <div className="w-screen h-auto text-center">
           <h1 className="font-Poppins font-medium text-3xl">Contact Us</h1>
-          <p className="font-Poppins text-base my-3">
+          <p className="font-Poppins text-sm md:text-base my-3">
             Most calendars are designed for teams. <br /> Slate is designed for
             freelancers
           </p>
         </div>
-        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center md:my-20">
+        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center py-10 lg:py-0 md:my-20">
           <div
             id="Contact_Card"
             className="w-80 h-100 shadow-lg rounded-xl py-14 order-2 lg:order-1"
@@ -56,7 +51,7 @@ export default function ContactSect() {
           </div>
 
           <div className="h-auto w-full grid place-items-center lg:place-items-start order-1 lg:order-2">
-            <div className="w-auto h-fit grid grid-rows-3 grid-cols-none md:grid-rows-none md:grid-cols-3 gap-5 md:gap-0 order-3 md:order-1 my-5 md:my-0">
+            <div className="w-auto h-fit grid grid-rows-3 grid-cols-none md:grid-rows-none md:grid-cols-3 gap-5 md:gap-0 my-5 md:my-0">
               <div className="w-auto h-auto flex md:grid md:place-items-center">
                 <FontAwesomeIcon
                   className="text-blue-500 text-2xl"
@@ -85,33 +80,14 @@ export default function ContactSect() {
                 </span>
               </div>
             </div>
-            <div className="w-auto h-auto flex justify-center items-center md:my-10 order-2">
+            <div className="w-auto h-auto flex justify-center items-center md:my-10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2895640275!2d-74.26055843565727!3d40.69766840340678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sid!4v1658813898849!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3025242214467!2d106.65834555004427!3d-6.223783162664919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbd89324cc0d%3A0xb2c6327f3b8251cd!2sAlam%20Sutera%2C%20Kunciran%2C%20Kec.%20Pinang%2C%20Kota%20Tangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1658975410079!5m2!1sen!2sid"
                 className="border-none w-80 h-72 md:w-100 md:h-80 hidden md:block"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
-            <div className="w-auto h-auto my-5 order-1 md:order-3">
-              <ul className="list-none inline space-x-5 text-4xl text-blue-500">
-                <li className="inline">
-                  <a href="#">
-                    <TwitterOutlined />
-                  </a>
-                </li>
-                <li className="inline">
-                  <a href="#">
-                    <FacebookFilled />
-                  </a>
-                </li>
-                <li className="inline">
-                  <a href="#">
-                    <LinkedinFilled />
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

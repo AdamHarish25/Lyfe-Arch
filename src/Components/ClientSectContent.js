@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from "react";
 import AOS from "aos";
 import {
@@ -10,6 +11,13 @@ import {
   TwitterCircleFilled,
   WindowsFilled,
 } from "@ant-design/icons";
+
+import DPRRI from "../Attachments/Images/Lyfe Home/DPRRI.png";
+import Erfolg from "../Attachments/Images/Lyfe Home/Erfolg.png";
+import KaisarRes from "../Attachments/Images/Lyfe Home/KaisarR.png";
+import KempDo from "../Attachments/Images/Lyfe Home/Kempdo.png";
+import KemPer from "../Attachments/Images/Lyfe Home/KemPer.png";
+import Taqychan from "../Attachments/Images/Lyfe Home/Taqychan.png";
 
 export default function ClientSectContent() {
   useEffect(() => {
@@ -36,92 +44,66 @@ export default function ClientSectContent() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-screen h-80 overflow-y-auto md:h-auto place-items-center gap-4 my-10 px-10">
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Kementerian Pemuda dan Olahraga <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <GoogleOutlined className="text-4xl" />
+                <img src={KempDo} className="h-20 w-40"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Dewan Perwakilan Rakyat <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <FacebookFilled className="text-4xl text-blue-600" />
+                <img src={DPRRI} className="h-20 w-36"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Kementerian Pertanian <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <AmazonSquareFilled className="text-4xl" />
+                <img src={KemPer} className="h-20 w-28"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Taqychan Saffron Office
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <TwitterCircleFilled className="text-4xl text-blue-500" />
+                <img src={Taqychan} className="h-24 w-36"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Kaisar Residence
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <GithubFilled className="text-4xl" />
+                <img src={KaisarRes} className="h-24 w-36"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
+          <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
+                Erfolg Studio
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <DropboxSquareFilled className="text-4xl text-blue-500" />
+                <img src={Erfolg} className="h-24 w-36"></img>
               </div>
             </div>
           </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
-            <div>
-              <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
-              </h1>
-              <div className="flex justify-center items-center w-full h-auto my-3">
-                <WindowsFilled className="text-4xl text-blue-500" />
-              </div>
-            </div>
-          </div>
-          <div className="h-36 w-60 lg:w-full flex justify-center items-center border">
-            <div>
-              <h1 className="font-Poppins font-normal text-center text-base">
-                Client Name
-              </h1>
-              <div className="flex justify-center items-center w-full h-auto my-3">
-                <GooglePlusSquareFilled className="text-4xl text-red-600" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-screen h-auto flex justify-center items-center my-5">
-          <button className="w-60 h-12 hover:h-14 hover:w-64 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-lg rounded-full">
-            Try For Free
-          </button>
         </div>
       </div>
     </section>
