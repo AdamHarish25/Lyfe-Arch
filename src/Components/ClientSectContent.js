@@ -1,16 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from "react";
 import AOS from "aos";
-import {
-  AmazonSquareFilled,
-  DropboxSquareFilled,
-  FacebookFilled,
-  GithubFilled,
-  GoogleOutlined,
-  GooglePlusSquareFilled,
-  TwitterCircleFilled,
-  WindowsFilled,
-} from "@ant-design/icons";
 
 import DPRRI from "../Attachments/Images/Lyfe Home/DPRRI.png";
 import Erfolg from "../Attachments/Images/Lyfe Home/Erfolg.png";
