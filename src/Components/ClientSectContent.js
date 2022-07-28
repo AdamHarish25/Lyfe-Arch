@@ -90,7 +90,7 @@ export default function ClientSectContent() {
                 Erfolg Studio
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={Erfolg} className="h-24 w-36"></img>
+                <img src={Erfolg} className="h-28 w-40"></img>
               </div>
             </div>
           </div>
