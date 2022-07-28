@@ -33,7 +33,7 @@ export default function ClientSectContent() {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-screen h-80 overflow-y-auto md:h-auto place-items-center gap-4 my-10 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-screen h-100 overflow-y-auto md:h-auto place-items-center gap-4 my-10 px-10">
           <div className="h-auto w-80 lg:w-full flex justify-center items-center border py-5">
             <div>
               <h1 className="font-Poppins font-normal text-center text-base">
