@@ -1328,6 +1328,10 @@ input:checked + .toggle-bg{
   margin-top: 2.5rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .block{
   display: block;
 }
@@ -1497,6 +1501,10 @@ input:checked + .toggle-bg{
 
 .h-0{
   height: 0px;
+}
+
+.h-screenLg{
+  height: 120vh;
 }
 
 .w-screen{
