@@ -1324,6 +1324,10 @@ input:checked + .toggle-bg{
   margin-bottom: 0.5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1627,6 +1631,14 @@ input:checked + .toggle-bg{
 
 .w-24{
   width: 6rem;
+}
+
+.w-110{
+  width: 35rem;
+}
+
+.w-128{
+  width: 45rem;
 }
 
 .max-w-lg{
@@ -2804,6 +2816,11 @@ input:checked + .toggle-bg{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pl-0{
@@ -4847,6 +4864,11 @@ input:checked + .toggle-bg{
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-lg{

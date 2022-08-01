@@ -23,7 +23,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 5000);
+    }, 7000);
   }
 
   nextSlide = () => {
@@ -49,7 +49,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="mt-8">
-        <div className="max-w-2xl h-96 flex overflow-hidden relative">
+        <div className="w-screen md:w-auto h-96 flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
             className="absolute left-0 text-3xl inset-y-1/2 text-black cursor-pointer"
@@ -109,8 +109,8 @@ class Carousel extends Component {
               );
             })}
           </Swipe>
-          <div className="absolute w-full flex justify-center bottom-0">
-            {CarouselData.map((element, index) => {
+          <div className="absolute w-full flex mt-10 justify-center bottom-0">
+            {CarouselData.map((_element, index) => {
               return (
                 <div
                   className={
