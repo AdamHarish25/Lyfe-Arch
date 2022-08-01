@@ -40,7 +40,7 @@ export default function ClientSectContent() {
                 Kementerian Pemuda dan Olahraga <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={KempDo} className="h-20 w-40"></img>
+                <img src={KempDo} className="h-20 w-40" />
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function ClientSectContent() {
                 Dewan Perwakilan Rakyat <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={DPRRI} className="h-20 w-36"></img>
+                <img src={DPRRI} className="h-24 w-44" />
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function ClientSectContent() {
                 Kementerian Pertanian <br /> Republik Indonesia
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={KemPer} className="h-20 w-28"></img>
+                <img src={KemPer} className="h-20 w-28" />
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ClientSectContent() {
                 Taqychan Saffron Office
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={Taqychan} className="h-24 w-36"></img>
+                <img src={Taqychan} className="h-24 w-32" />
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function ClientSectContent() {
                 Kaisar Residence
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={KaisarRes} className="h-24 w-36"></img>
+                <img src={KaisarRes} className="h-24 w-36" />
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function ClientSectContent() {
                 Erfolg Studio
               </h1>
               <div className="flex justify-center items-center w-full h-auto my-3">
-                <img src={Erfolg} className="h-28 w-40"></img>
+                <img src={Erfolg} className="h-28 w-40" />
               </div>
             </div>
           </div>

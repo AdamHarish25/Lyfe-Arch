@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ContactSect() {
   return (
     <section id="contactSect">
-      <div className="w-screen h-auto my-20">
+      <div className="w-screen h-auto py-20 bg-slate-700 text-white">
         <div className="w-screen h-auto text-center">
           <h1 className="font-Poppins font-medium text-3xl">Contact Us</h1>
           <p className="font-Poppins text-sm md:text-base my-3">
@@ -21,7 +21,7 @@ export default function ContactSect() {
         <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center py-10 lg:py-0 md:my-20">
           <div
             id="Contact_Card"
-            className="w-80 h-100 shadow-lg rounded-xl py-14 order-2 lg:order-1"
+            className="w-80 h-100 shadow-lg rounded-xl py-14 order-2 lg:order-1 bg-white text-black"
           >
             <h1 className="text-center font-Poppins font-bold">Contact Us</h1>
             <div className="w-full h-full p-5">

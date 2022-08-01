@@ -38,7 +38,7 @@ function App() {
 
       <TestimonialSect />
 
-      <PricingSect />
+      {/* <PricingSect /> */}
 
       <ContactSect />
 
