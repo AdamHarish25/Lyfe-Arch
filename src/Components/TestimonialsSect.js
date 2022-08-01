@@ -18,7 +18,7 @@ export default function TestimonialSect() {
         </h1>
 
         <div className="h-96 xl:h-100 2xl:h-128 grid place-items-center">
-          <div className="w-screen lg:w-128 h-full bg-slate-700 text-white px-0 lg:px-5 rounded-none lg:rounded-lg">
+          <div className="w-screen md:w-128 h-full bg-slate-700 text-white px-0 md:px-5 rounded-none md:rounded-lg">
             <Carousel slideInterval={5000}>
               <div>
                 <div className="w-auto h-auto grid place-items-center my-10">
