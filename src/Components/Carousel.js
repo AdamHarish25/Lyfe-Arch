@@ -50,10 +50,6 @@ class Carousel extends Component {
     return (
       <div className="mt-5">
         <div className="w-screen md:w-auto h-96 flex overflow-hidden relative">
-          <AiOutlineLeft
-            onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 text-black cursor-pointer"
-          />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
               return (
@@ -126,6 +122,11 @@ class Carousel extends Component {
               );
             })}
           </div>
+
+          <AiOutlineLeft
+            onClick={this.prevSlide}
+            className="absolute left-0 text-3xl inset-y-1/2 text-black cursor-pointer"
+          />
 
           <AiOutlineRight
             onClick={this.nextSlide}
