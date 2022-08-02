@@ -24,22 +24,34 @@ export default function Footer() {
               </a>
             </li>
             <li className="inline md:block">
-              <a className="hover:text-base transform duration-200" href="#">
+              <a
+                className="hover:text-base transform duration-200"
+                href="#FeatureSect"
+              >
                 Product
               </a>
             </li>
             <li className="inline md:block">
-              <a className="hover:text-base transform duration-200" href="#">
+              <a
+                className="hover:text-base transform duration-200"
+                href="#PricingSect"
+              >
                 Pricing
               </a>
             </li>
             <li className="inline md:block">
-              <a className="hover:text-base transform duration-200" href="#">
+              <a
+                className="hover:text-base transform duration-200"
+                href="#IntroSect"
+              >
                 About
               </a>
             </li>
             <li className="inline md:block">
-              <a className="hover:text-base transform duration-200" href="#">
+              <a
+                className="hover:text-base transform duration-200"
+                href="#contactSect"
+              >
                 Contact
               </a>
             </li>

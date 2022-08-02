@@ -1,6 +1,5 @@
 import { Animated } from "react-animated-css";
 import "../Components/backgroundImg.css";
-
 export default function HomeSect() {
   return (
     <section id="HomeSect">
@@ -43,9 +42,12 @@ export default function HomeSect() {
                 animationOutDelay={1500}
                 isVisible={true}
               >
-                <button className="h-10 w-56 hover:h-12 hover:w-60 transform duration-200 bg-blue-500 font-Poppins text-base rounded-3xl text-white">
+                <a
+                  href="#FeatureSect"
+                  className="px-14 py-3 hover:px-16 hover:py-3.5 transform duration-200 bg-blue-500 font-Poppins text-base rounded-3xl text-white"
+                >
                   Explore Now
-                </button>
+                </a>
               </Animated>
             </div>
           </li>

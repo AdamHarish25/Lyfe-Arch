@@ -56,16 +56,16 @@ class Carousel extends Component {
           onMouseLeave={() => {
             this.setState({ paused: false });
           }}
-          className="w-screen md:max-w-3xl lg:max-w-4xl h-100 grid place-items-center overflow-hidden relative ring rounded-md"
+          className="w-screen md:max-w-3xl lg:max-w-4xl h-100 grid place-items-center overflow-hidden relative ring ring-transparent transform duration-300 hover:ring-blue-500 rounded-none md:rounded-lg ease-in-out"
         >
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
               return (
                 <div
-                  className={`transform duration-200 ease-in-out w-full h-auto object-cover ${
+                  className={`transform duration-200 ease-in-out w-full h-auto ${
                     index === this.state.currentSlide
-                      ? "visible"
-                      : "invisible hidden"
+                      ? "block object-cover"
+                      : "hidden"
                   }`}
                 >
                   <div className="w-auto h-auto grid place-items-center my-10">
@@ -113,7 +113,7 @@ class Carousel extends Component {
                 <div
                   className={`transform duration-300 ease-in-out ${
                     index === this.state.currentSlide
-                      ? "h-2 w-5 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
+                      ? "h-2 w-5 bg-blue-500 rounded-full mx-2 mb-2 cursor-pointer"
                       : "h-2 w-2 bg-gray-600/40 rounded-full mx-2 mb-2 cursor-pointer"
                   }`}
                   key={index}
@@ -127,12 +127,12 @@ class Carousel extends Component {
 
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
+            className="absolute left-0 md:left-2 lg:left-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
           />
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
+            className="absolute right-0 md:right-2 lg:right-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
           />
         </div>
       </div>

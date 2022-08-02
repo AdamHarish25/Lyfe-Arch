@@ -50,7 +50,7 @@ export default function SubscriptionSect() {
                   className="w-full text-black rounded-full border-none bg-gray-200/[.70]"
                   placeholder="Your Email"
                 />
-                <button className="w-full sm:w-44 lg:w-40 h-11 rounded-full bg-blue-600 text-white font-Poppins font-medium text-lg">
+                <button className="w-full sm:w-44 lg:w-40 h-11 rounded-full bg-blue-500 text-white font-Poppins font-medium text-lg">
                   Subscribe
                 </button>
               </div>

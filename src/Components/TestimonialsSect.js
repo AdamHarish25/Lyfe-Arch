@@ -14,12 +14,6 @@ export default class TestimonialSect extends Component {
           <div className="flex justify-center">
             <Carousel />
           </div>
-          ;
-          <div className="w-screen h-auto my-10 flex justify-center items-center">
-            <button className="w-60 h-12 hover:h-14 hover:w-64 transform duration-200 text-white bg-blue-500 font-Poppins font-medium text-base rounded-full">
-              More Testimonials
-            </button>
-          </div>
         </div>
       </section>
     );

@@ -20,16 +20,16 @@ export default function Navbar() {
                 <a href="#">Home</a>
               </li>
               <li className="inline">
-                <a href="#">Product</a>
+                <a href="#FeatureSect">Product</a>
               </li>
               <li className="inline">
-                <a href="#">Pricing</a>
+                <a href="#PricingSect">Pricing</a>
               </li>
               <li className="inline">
-                <a href="#">About</a>
+                <a href="#IntroSect">About</a>
               </li>
               <li className="inline">
-                <a href="#">Contact</a>
+                <a href="#contactSect">Contact</a>
               </li>
             </ul>
           </div>
@@ -57,89 +57,51 @@ export default function Navbar() {
           >
             <ul className="list-none space-y-5">
               <li>
-                <a href="" onClick={() => setIsOpen(!isOpen)}>
+                <a href="#" onClick={() => setIsOpen(!isOpen)}>
                   <h3
-                    className={`text-xl text-pink-400 transform duration-200`}
+                    className={`text-xl text-blue-500 transform duration-200`}
                   >
                     Home
                   </h3>
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => setIsOpen(!isOpen)}>
+                <a href="#FeatureSect" onClick={() => setIsOpen(!isOpen)}>
                   <h3
-                    className={`text-xl hover:text-pink-400 transform duration-200 text-black`}
+                    className={`text-xl hover:text-blue-500 transform duration-200 text-black`}
                   >
                     Product
                   </h3>
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => setIsOpen(!isOpen)}>
+                <a href="#PricingSect" onClick={() => setIsOpen(!isOpen)}>
                   <h3
-                    className={`text-xl hover:text-pink-400 transform duration-200 text-black`}
+                    className={`text-xl hover:text-blue-500 transform duration-200 text-black`}
                   >
                     Pricing
                   </h3>
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => setIsOpen(!isOpen)}>
+                <a href="#IntroSect" onClick={() => setIsOpen(!isOpen)}>
                   <h3
-                    className={`text-xl hover:text-pink-400 transform duration-200 text-black`}
+                    className={`text-xl hover:text-blue-500 transform duration-200 text-black`}
                   >
                     About
                   </h3>
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => setIsOpen(!isOpen)}>
+                <a href="#contactSect" onClick={() => setIsOpen(!isOpen)}>
                   <h3
-                    className={`text-xl hover:text-pink-400 transform duration-200 text-black`}
+                    className={`text-xl hover:text-blue-500 transform duration-200 text-black`}
                   >
                     Contact
                   </h3>
                 </a>
               </li>
             </ul>
-            {/* <div className="h-10 my-10">
-              <hr className="border-b-4 rounded-xl text-gray-600"></hr>
-            </div>
-            <ul className="list-none space-y-5">
-              <li>
-                <a href="#" className="group">
-                  <img
-                    src={TwitterLogo}
-                    className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
-                  ></img>
-                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
-                    Follow us on Twitter
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="group">
-                  <img
-                    src={FBLogo}
-                    className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
-                  ></img>
-                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
-                    Follow us on Facebook
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="group">
-                  <img
-                    src={LinkedInLogo}
-                    className="h-6 w-7 group-hover:h-7 group-hover:w-8 transform duration-200 inline"
-                  ></img>
-                  <span className="ml-3 text-xs text-gray-400 font-Poppins font-medium group-hover:font-semibold">
-                    LinkedIn
-                  </span>
-                </a>
-              </li>
-            </ul> */}
           </aside>
         </header>
       </div>
