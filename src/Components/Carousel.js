@@ -23,7 +23,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 5000);
+    }, 10000);
   }
 
   nextSlide = () => {
