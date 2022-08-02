@@ -23,7 +23,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 7000);
+    }, 5000);
   }
 
   nextSlide = () => {
@@ -49,22 +49,24 @@ class Carousel extends Component {
   render() {
     return (
       <div className="mt-5">
-        <div className="w-screen md:w-auto h-96 flex overflow-hidden relative">
+        <div
+          onMouseEnter={() => {
+            this.setState({ paused: true });
+          }}
+          onMouseLeave={() => {
+            this.setState({ paused: false });
+          }}
+          className="w-screen md:max-w-3xl lg:max-w-4xl h-100 grid place-items-center overflow-hidden relative ring rounded-md"
+        >
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
               return (
                 <div
-                  onMouseEnter={() => {
-                    this.setState({ paused: true });
-                  }}
-                  onMouseLeave={() => {
-                    this.setState({ paused: false });
-                  }}
-                  className={
+                  className={`transform duration-200 ease-in-out w-full h-auto object-cover ${
                     index === this.state.currentSlide
-                      ? "block w-full h-auto object-cover"
-                      : "hidden"
-                  }
+                      ? "visible"
+                      : "invisible hidden"
+                  }`}
                 >
                   <div className="w-auto h-auto grid place-items-center my-10">
                     <img
@@ -74,7 +76,7 @@ class Carousel extends Component {
                     />
                   </div>
                   <div className="w-auto h-auto px-10 my-10">
-                    <p className="text-center font-Poppins font-normal text-xs md:text-lg">
+                    <p className="text-center font-Poppins font-normal text-xs sm:text-sm md:text-lg">
                       Most calendars are designed for teams. Slate is designed
                       for freelancers <br className="hidden md:block" /> who
                       want a simple way to plan their schedule.
@@ -105,15 +107,15 @@ class Carousel extends Component {
               );
             })}
           </Swipe>
-          <div className="absolute w-full flex mt-10 justify-center bottom-0">
+          <div className="absolute w-full flex justify-center bottom-5">
             {CarouselData.map((_element, index) => {
               return (
                 <div
-                  className={
+                  className={`transform duration-300 ease-in-out ${
                     index === this.state.currentSlide
-                      ? "h-2 w-2 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
-                      : "h-2 w-2 bg-gray-400 rounded-full mx-2 mb-2 cursor-pointer"
-                  }
+                      ? "h-2 w-5 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
+                      : "h-2 w-2 bg-gray-600/40 rounded-full mx-2 mb-2 cursor-pointer"
+                  }`}
                   key={index}
                   onClick={() => {
                     this.setCurrentSlide(index);
@@ -125,12 +127,12 @@ class Carousel extends Component {
 
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 text-black cursor-pointer"
+            className="absolute left-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
           />
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-0 text-3xl inset-y-1/2 text-black cursor-pointer"
+            className="absolute right-5 text-5xl inset-y-1/2 text-black/30 hover:text-black cursor-pointer transform duration-200"
           />
         </div>
       </div>
