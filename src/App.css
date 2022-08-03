@@ -2813,6 +2813,11 @@ input:checked + .toggle-bg{
   padding-right: 3.5rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pl-0{
   padding-left: 0px;
 }
@@ -4899,6 +4904,11 @@ input:checked + .toggle-bg{
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-lg{
