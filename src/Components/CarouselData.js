@@ -43,3 +43,4 @@ export const CarouselData = [
       '"Maecenas eget risus suscipit, tempor lorem vel, vestibulum magna. Proin fringilla a dolor quis tincidunt. Aliquam blandit faucibus turpis. Donec consectetur imperdiet neque id facilisis."',
   },
 ];
+

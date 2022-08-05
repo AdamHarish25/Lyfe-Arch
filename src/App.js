@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ClientSectContent from "./Components/ClientSectContent";
 import IntroSect from "./Components/IntroSect";
-import SubscriptionSect from "./Components/SubscriptionSect";
 import FeaturesSect from "./Components/FeaturesSect";
 import HomeSect from "./Components/HomeSect";
 import TestimonialSect from "./Components/TestimonialsSect";
@@ -30,8 +29,6 @@ function App() {
       <FeaturesSect />
 
       <IntroSect />
-
-      <SubscriptionSect />
 
       <ClientSectContent />
 

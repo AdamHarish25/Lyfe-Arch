@@ -23,7 +23,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 10000);
+    }, 5000);
   }
 
   nextSlide = () => {
@@ -62,9 +62,7 @@ class Carousel extends Component {
             return (
               <div
                 className={`transform duration-200 ease-in-out w-full h-auto px-0 md:px-10 ${
-                  index === this.state.currentSlide
-                    ? "block object-cover"
-                    : "hidden"
+                  index === this.state.currentSlide ? "block" : "hidden"
                 }`}
               >
                 <div className="w-auto h-auto grid place-items-center my-10">
@@ -111,16 +109,18 @@ class Carousel extends Component {
           {CarouselData.map((_element, index) => {
             return (
               <div
-                className={`transform duration-300 ease-in-out ${
+                className={`transform duration-300 ease-in-out font-Poppins text-white ${
                   index === this.state.currentSlide
-                    ? "h-2 w-5 bg-blue-500 rounded-full mx-2 mb-2 cursor-pointer"
-                    : "h-2 w-2 bg-gray-600/40 rounded-full mx-2 mb-2 cursor-pointer"
+                    ? "px-5 bg-blue-500 rounded-full mx-2 mb-2 cursor-pointer"
+                    : "px-2 bg-gray-600/40 rounded-full mx-2 mb-2 cursor-pointer"
                 }`}
                 key={index}
                 onClick={() => {
                   this.setCurrentSlide(index);
                 }}
-              ></div>
+              >
+                {index + 1}
+              </div>
             );
           })}
         </div>
