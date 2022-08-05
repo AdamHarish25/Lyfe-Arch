@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { Component } from "react";
-import FadingCarousel from "./FadingCarousel";
+import FadingCarousel from "./Carousel/FadingCarousel";
 
 export default class IntroSect extends Component {
   render() {

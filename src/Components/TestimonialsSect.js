@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import { Component } from "react";
-import Carousel from "./Carousel";
+import Carousel from "./Carousel/Carousel";
 
 export default class TestimonialSect extends Component {
   render() {
