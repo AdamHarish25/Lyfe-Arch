@@ -14,6 +14,7 @@ import AdVideo from "../Attachments/Video/Client'sVideo.mp4";
 import "video-react/dist/video-react.css";
 
 export default function FeaturesSect() {
+
   return (
     <section id="FeatureSect">
       <div className="w-screen h-auto py-5 justify-center my-10">
@@ -68,16 +69,17 @@ export default function FeaturesSect() {
             </p>
           </div>
         </div>
-        <div className="flex items-center h-auto w-screen py-10 px-10">
-          <div className="w-full h-full px-5 flex justify-center">
+        <div className="flex items-center h-auto w-screen py-10 md:px-20 lg:px-10">
+          <div className="w-full h-full flex justify-center">
+
             <div
               id="ProductVideo"
-              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-400/[.30] rounded-xl p-3 grid place-items-center"
+              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-900 rounded-none lg:rounded-xl px-3 grid place-items-center"
             >
-              <Player src={AdVideo} height={400} fluid={false} startTime={0}>
+              <Player src={AdVideo} height={400} className="relative" fluid={false} startTime={0}>
                 <LoadingSpinner />
                 <BigPlayButton position="center" />
-                <ControlBar autoHide={true} autoHideTime={2000}>
+                <ControlBar className="absolute left-2/4 -translate-x-2/4 w-screen z-10 md:w-110 lg:w-128 2xl:w-256 rounded-none md:rounded-lg lg:rounded-t-none lg:rounded-b-xl" autoHide={true} autoHideTime={2000}>
                   <VolumeMenuButton vertical />
                   <PlayToggle />
                 </ControlBar>

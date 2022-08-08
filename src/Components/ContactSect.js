@@ -18,35 +18,37 @@ export default function ContactSect() {
             freelancers
           </p>
         </div>
-        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center py-10 lg:py-0 md:my-20">
-          <div
-            id="Contact_Card"
-            className="w-80 h-100 shadow-lg rounded-xl py-14 order-2 lg:order-1 bg-white text-black"
-          >
-            <h1 className="text-center font-Poppins font-bold">Contact Us</h1>
-            <div className="w-full h-full p-5">
-              <form action="" className="space-y-8">
-                <input
-                  type={"text"}
-                  className="w-full rounded-full bg-gray-300/[.30] border-none font-Poppins text-sm"
-                  placeholder="Your Name"
-                />
-                <input
-                  type={"email"}
-                  className="w-full rounded-full bg-gray-300/[.30] border-none font-Poppins text-sm"
-                  placeholder="Your Email"
-                />
-                <textarea
-                  className="w-full resize-none h-20 rounded-md bg-gray-300/[.30] border-none font-Poppins text-sm"
-                  placeholder="Your Message"
-                />
-                <button
-                  type={"submit"}
-                  className="w-32 h-10 bg-blue-500 rounded-full font-Poppins text-white"
-                >
-                  Send
-                </button>
-              </form>
+        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-32 place-items-center py-10 lg:py-0 md:my-20">
+          <div className="w-full h-auto flex justify-center lg:justify-end items-center order-2 lg:order-1">
+            <div
+              id="Contact_Card"
+              className="w-80 xl:w-96 2xl:w-110 h-100 shadow-lg rounded-xl py-14 bg-white text-black"
+            >
+              <h1 className="text-center font-Poppins font-bold">Contact Us</h1>
+              <div className="w-full h-full p-5 text-sm lg:text-lg 2xl:text-xl">
+                <form action="" className="space-y-8">
+                  <input
+                    type={"text"}
+                    className="w-full rounded-full bg-gray-300/[.30] border-none font-Poppins"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type={"email"}
+                    className="w-full rounded-full bg-gray-300/[.30] border-none font-Poppins"
+                    placeholder="Your Email"
+                  />
+                  <textarea
+                    className="w-full resize-none h-20 rounded-md bg-gray-300/[.30] border-none font-Poppins"
+                    placeholder="Your Message"
+                  />
+                  <button
+                    type={"submit"}
+                    className="w-32 h-10 bg-blue-500 rounded-full font-Poppins text-white"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
 
