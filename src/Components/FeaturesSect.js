@@ -74,12 +74,12 @@ export default function FeaturesSect() {
 
             <div
               id="ProductVideo"
-              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-900 rounded-none lg:rounded-xl px-3 grid place-items-center"
+              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-900 rounded-none md:rounded-xl grid place-items-center"
             >
-              <Player src={AdVideo} height={400} className="relative" fluid={false} startTime={0}>
+              <Player src={AdVideo} height={400} className="relative w-full rounded-xl bg-transparent" fluid={false} startTime={0}>
                 <LoadingSpinner />
-                <BigPlayButton position="center" />
-                <ControlBar className="absolute left-2/4 -translate-x-2/4 w-screen z-10 md:w-110 lg:w-128 2xl:w-256 rounded-none md:rounded-lg lg:rounded-t-none lg:rounded-b-xl" autoHide={true} autoHideTime={2000}>
+                <BigPlayButton className="w-0 h-0 px-10 py-6 hover:ring-white ring-2 ring-transparent transform duration-200 bg-blue-600 text-white rounded-full border-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4" />
+                <ControlBar className="absolute bottom-0 md:bottom-2 lg:bottom-0 left-2/4 -translate-x-2/4 px-2 md:px-0 w-full md:w-110 lg:w-128 2xl:w-256 rounded-none md:rounded-lg lg:rounded-t-none lg:rounded-b-xl" autoHide={true} autoHideTime={2000}>
                   <VolumeMenuButton vertical />
                   <PlayToggle />
                 </ControlBar>
