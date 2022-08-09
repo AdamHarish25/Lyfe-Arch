@@ -69,17 +69,17 @@ export default function FeaturesSect() {
             </p>
           </div>
         </div>
-        <div className="flex items-center h-auto w-screen py-10 md:px-20 lg:px-10">
+        <div className="flex items-center h-auto w-screen py-10 px-5 md:px-20 lg:px-10">
           <div className="w-full h-full flex justify-center">
 
             <div
               id="ProductVideo"
-              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-900 rounded-none md:rounded-xl grid place-items-center"
+              className="w-full lg:w-128 2xl:w-256 shadow-xl h-auto bg-slate-900 rounded-xl grid place-items-center"
             >
-              <Player src={AdVideo} height={400} className="relative w-full rounded-xl bg-transparent group" fluid={false} startTime={0}>
+              <Player src={AdVideo} className="relative w-full h-72 md:h-96 lg:h-100 bg-transparent group" fluid={false} startTime={0}>
                 <LoadingSpinner />
                 <BigPlayButton className="w-0 h-0 px-10 py-6 group-hover:ring-white ring-2 ring-transparent transform duration-200 bg-blue-600 text-white rounded-full border-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4" />
-                <ControlBar className="absolute bottom-0 md:bottom-2 lg:bottom-0 left-2/4 -translate-x-2/4 px-2 md:px-0 w-full md:w-110 lg:w-128 2xl:w-256 rounded-none md:rounded-lg lg:rounded-t-none lg:rounded-b-xl" autoHide={true} autoHideTime={1000}>
+                <ControlBar className="absolute bottom-2 left-2/4 -translate-x-2/4 w-68 sm:w-96 md:w-110 lg:w-115 2xl:w-128 rounded-xl md:rounded-lg" autoHide={true} autoHideTime={1000}>
                   <VolumeMenuButton vertical />
                   <PlayToggle />
                 </ControlBar>
