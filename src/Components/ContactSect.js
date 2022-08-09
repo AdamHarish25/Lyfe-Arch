@@ -18,11 +18,11 @@ export default function ContactSect() {
             freelancers
           </p>
         </div>
-        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-32 place-items-center py-10 lg:py-0 md:my-20">
+        <div className="w-screen h-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 2xl:gap-32 place-items-center py-10 lg:py-0 md:my-20">
           <div className="w-full h-auto flex justify-center lg:justify-end items-center order-2 lg:order-1">
             <div
               id="Contact_Card"
-              className="w-80 xl:w-96 2xl:w-110 h-100 shadow-lg rounded-xl py-14 bg-white text-black"
+              className="w-80 lg:w-96 2xl:w-110 h-100 shadow-lg rounded-xl py-14 bg-white text-black"
             >
               <h1 className="text-center font-Poppins font-bold">Contact Us</h1>
               <div className="w-full h-full p-5 text-sm lg:text-lg 2xl:text-xl">

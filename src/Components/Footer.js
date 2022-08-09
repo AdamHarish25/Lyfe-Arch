@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
-    <div className="w-screen h-auto py-14 px-10 md:px-0 flex justify-center items-center">
+    <div className="w-screen h-auto py-10 px-10 md:px-0 flex justify-center items-center">
       <div className="w-100 h-auto grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 place-items-center">
         <div className="w-auto h-auto mb-16">
           <h1 className="font-medium text-lg py-5 font-Poppins">Pages</h1>
