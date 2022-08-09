@@ -1398,6 +1398,18 @@ input:checked + .toggle-bg{
   bottom: 0.5rem !important;
 }
 
+.left-2\/4{
+  left: 50% !important;
+}
+
+.top-2\/4{
+  top: 50% !important;
+}
+
+.bottom-2{
+  bottom: 0.5rem !important;
+}
+
 .z-10{
   z-index: 10 !important;
 }
@@ -3165,6 +3177,22 @@ input:checked + .toggle-bg{
   height: 0px !important;
 }
 
+.h-auto{
+  height: auto !important;
+}
+
+.h-full{
+  height: 100% !important;
+}
+
+.h-72{
+  height: 18rem !important;
+}
+
+.h-0{
+  height: 0px !important;
+}
+
 .w-screen{
   width: 100vw !important;
 }
@@ -3899,6 +3927,22 @@ input:checked + .toggle-bg{
   width: 18rem !important;
 }
 
+.w-screen{
+  width: 100vw !important;
+}
+
+.w-full{
+  width: 100% !important;
+}
+
+.w-0{
+  width: 0px !important;
+}
+
+.w-68{
+  width: 17rem !important;
+}
+
 .max-w-sm{
   max-width: 24rem !important;
 }
@@ -3999,6 +4043,18 @@ input:checked + .toggle-bg{
 
 .translate-x-2\/4{
   --tw-translate-x: 50% !important;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.-translate-x-2\/4{
+  --tw-translate-x: -50% !important;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.-translate-y-2\/4{
+  --tw-translate-y: -50% !important;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -4777,6 +4833,14 @@ input:checked + .toggle-bg{
   border-radius: 9999px !important;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem !important;
+}
+
+.rounded-full{
+  border-radius: 9999px !important;
+}
+
 .rounded-r-none{
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -5285,6 +5349,20 @@ input:checked + .toggle-bg{
 .bg-slate-700{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-slate-900{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-transparent{
+  background-color: transparent !important;
+}
+
+.bg-blue-600{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(28 100 242 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-slate-900{
@@ -6855,6 +6933,26 @@ input:checked + .toggle-bg{
 .px-4{
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+}
+
+.py-10{
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.px-5{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.px-10{
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.py-6{
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .py-10{
@@ -9720,6 +9818,10 @@ input:checked + .toggle-bg{
     width: 24rem !important;
   }
 
+  .sm\:w-100{
+    width: 30rem !important;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
@@ -11208,6 +11310,14 @@ input:checked + .toggle-bg{
     width: 40rem !important;
   }
 
+  .lg\:w-128{
+    width: 45rem !important;
+  }
+
+  .lg\:w-115{
+    width: 40rem !important;
+  }
+
   .lg\:max-w-4xl{
     max-width: 56rem !important;
   }
@@ -11602,6 +11712,14 @@ input:checked + .toggle-bg{
 @media (min-width: 1806px){
   .\32xl\:w-110{
     width: 35rem !important;
+  }
+
+  .\32xl\:w-256{
+    width: 50rem !important;
+  }
+
+  .\32xl\:w-128{
+    width: 45rem !important;
   }
 
   .\32xl\:w-256{
