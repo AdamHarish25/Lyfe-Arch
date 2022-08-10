@@ -5,6 +5,8 @@ import BrushPng from "../Attachments/Images/brush.png";
 
 import "video-react/dist/video-react.css";
 import Video from "./VideoComp/VideoComp";
+import AdVideo from "../Attachments/Video/Client'sVideo.mp4";
+
 
 export default function FeaturesSect() {
 
@@ -62,7 +64,7 @@ export default function FeaturesSect() {
             </p>
           </div>
         </div>
-        <Video />
+        <Video src={AdVideo} height="h-80 md:h-96" width="w-full lg:w-128 2xl:w-256" />
       </div>
     </section>
   );
